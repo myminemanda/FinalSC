@@ -70,7 +70,7 @@ def create_rfm_df(df):
 # Load cleaned data
 # Ganti path file sesuai dengan lokasi file Anda
 try:
-    all_df = pd.read_csv("D:/SC/all_data.csv")
+    all_df = pd.read_csv("Dashboard/all_data.csv")
 except FileNotFoundError:
     st.error("File 'all_data.csv' not found. Please make sure the data file is in the correct directory.")
     st.stop()
@@ -89,7 +89,7 @@ max_date = all_df["order_date"].max()
 
 with st.sidebar:
     # Menambahkan logo perusahaan (ganti path jika perlu)
-    st.image("D:/SC/icon.png")
+    st.image("Dashboard/icon.png")
 
     # Mengambil start_date & end_date dari date_input
     start_date, end_date = st.date_input(
