@@ -5,6 +5,7 @@
 pip install streamlit
 pip install seaborn
 pip install matplotlib
+pip install babel
 pip install scikit-learn
 ```
 cd Dashboard
